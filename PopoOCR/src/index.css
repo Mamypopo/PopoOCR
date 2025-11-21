@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 dark:bg-[#1d1d1f] text-gray-900 dark:text-gray-200 transition-colors duration-300;
+    font-family: 'Inter', 'Plus Jakarta Sans', 'Prompt', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* MacBook Style Glass Effect */
+  .glass {
+    @apply bg-white/80 dark:bg-white/5 backdrop-blur-xl border border-white/20 dark:border-white/10;
+    @apply shadow-lg dark:shadow-black/20;
+  }
+  
+  .glass-strong {
+    @apply bg-white/90 dark:bg-white/[0.08] backdrop-blur-2xl border border-white/30 dark:border-white/10;
+    @apply shadow-xl dark:shadow-black/30;
+  }
+  
+  .dark-gradient {
+    @apply bg-gradient-to-br from-[#1d1d1f] via-[#1a1a1c] to-[#1d1d1f];
+  }
+  
+  /* Orange to Red Gradient */
+  .gradient-primary {
+    @apply bg-gradient-to-r from-orange-500 to-red-500;
+  }
+  
+  .gradient-primary-hover {
+    @apply hover:from-orange-600 hover:to-red-600;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent;
+  }
+  
+  .gradient-text-dark {
+    @apply dark:from-orange-400 dark:to-red-400;
+  }
+  
+  .dark-glow {
+    @apply dark:shadow-[0_0_30px_rgba(249,115,22,0.15)];
+  }
+  
+  /* MacBook Style Accent */
+  .mac-accent {
+    @apply dark:text-orange-400 dark:hover:text-red-400;
+  }
+}
+
