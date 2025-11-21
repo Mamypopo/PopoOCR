@@ -5,7 +5,7 @@ const Hero = () => {
         ภาพเป็นข้อความ (OCR)
       </h2>
       <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-        แปลงภาพและ PDF เป็นข้อความด้วย AI อย่างรวดเร็ว รองรับภาษาไทยและอังกฤษ
+        แปลงภาพและ PDF เป็นข้อความอย่างรวดเร็ว รองรับภาษาไทยและอังกฤษ
         <br className="hidden sm:block" />
         <span className="text-sm sm:text-base text-gray-500 dark:text-gray-400">
           ลากวางไฟล์หรือคลิกเพื่อเลือกภาพ/PDF
